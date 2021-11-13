@@ -19,10 +19,10 @@ function toggleMenu() {
 function showLoginForm() {
   var loginForm = document.getElementById("login-frm");
 
-  if (loginForm.style.display === "none") {
-    loginForm.style.display = "block";
-  } else {
+  if (loginForm.style.display === "block") {
     loginForm.style.display = "none";
+  } else {
+    loginForm.style.display = "block";
   }
 }
 

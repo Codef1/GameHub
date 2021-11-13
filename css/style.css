@@ -69,7 +69,6 @@ button {
   margin: 0 20px;
   padding-bottom: 5px;
   text-transform: uppercase;
-  word-wrap: none;
 }
 .navbar__menu-item:hover {
   border-bottom: 1px solid #000;
