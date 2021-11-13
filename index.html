@@ -42,15 +42,17 @@
               type="search"
               placeholder="Type in and hit Enter"
             />
-            <i class="icon fas fa-search"></i>
+            <button class="btn btn--icon">
+              <i class="icon fas fa-search" title="search button icon"></i>
+            </button>
           </label>
           <ul class="top-nav__menu">
             <li class="top-nav__menu-item">
-              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
               <a href="#">Cart</a>
             </li>
             <li class="top-nav__menu-item">
-              <i class="far fa-user-circle"></i>
+              <i class="far fa-user-circle" aria-hidden="true"></i>
               <button onclick="showLoginForm()">User</button>
               <form id="login-frm" class="login-frm">
                 <fieldset>
@@ -79,12 +81,18 @@
                   </button>
                   <span>OR</span>
                   <button class="btn btn--group">
-                    <i class="icon fab fa-facebook-square"></i>Login with
-                    Facebook
+                    <i
+                      class="icon fab fa-facebook-square"
+                      title="‌facebook icon"
+                    ></i
+                    >Login with Facebook
                   </button>
                   <button class="btn btn--group">
-                    <i class="icon fab fa-google-plus-square"></i>Login with
-                    Google +
+                    <i
+                      class="icon fab fa-google-plus-square"
+                      title="google plus icon"
+                    ></i
+                    >Login with Google +
                   </button>
                   <label for="register"
                     >New Member?
@@ -231,6 +239,73 @@
         </article>
       </main>
     </section>
+    <footer>
+      <section class="footer">
+        <div class="footer__social-media">
+          <div class="logo">game hub</div>
+          <div class="social-media">
+            <i class="icon fab fa-facebook-square" title="facebook icon"></i>
+            <i class="icon fab fa-twitter-square" title="twitter icon"></i>
+            <i
+              class="icon fab fa-google-plus-square"
+              title="google plus icon"
+            ></i>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <h2>main pages</h2>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">sell with us</li>
+            <li class="footer__menu-item">about us</li>
+            <li class="footer__menu-item">contact us</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h2>policy</h2>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">terms of usage</li>
+            <li class="footer__menu-item">privacy policy</li>
+            <li class="footer__menu-item">return policy</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h2>categories</h2>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">nintendo</li>
+            <li class="footer__menu-item">xbox</li>
+            <li class="footer__menu-item">playstation</li>
+            <li class="footer__menu-item">pc game</li>
+          </ul>
+        </nav>
+        <form class="subscribe-frm">
+          <fieldset>
+            <legend>
+              <h2>subscribe</h2>
+            </legend>
+            <p>
+              Subscribe to our newsletter, so that you can be the first to know
+              about new offers and promotions.
+            </p>
+            <label class="input-group" for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+              <button class="btn btn--primary">subscribe</button>
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="copyright">
+        <p>&copy;2021 all rights reserved.</p>
+        <div class="payment">
+          <i class="fab fa-cc-mastercard" title="mastercard icon"></i>
+          <i class="fab fa-cc-visa" title="visa card icon"></i>
+        </div>
+      </section>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
