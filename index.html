@@ -37,7 +37,7 @@
         <nav id="top-nav" class="top-nav__container">
           <section role="searchbox" class="search-box input-group">
             <input type="search" placeholder="Type in and hit Enter" />
-            <i class="fas fa-search"></i>
+            <i class="icon fas fa-search"></i>
           </section>
           <ul class="top-nav__menu">
             <li class="top-nav__menu-item">
@@ -46,7 +46,51 @@
             </li>
             <li class="top-nav__menu-item">
               <i class="far fa-user-circle"></i>
-              <a href="#">User</a>
+              <button onclick="showLoginForm()">User</button>
+              <form id="login-frm" class="login-frm">
+                <fieldset>
+                  <legend>sign in</legend>
+                  <label for="username">username</label>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Username"
+                    name="username"
+                    id="username"
+                    required
+                  />
+                  <label for="password">password</label>
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                  <button class="btn btn--link">
+                    <a href="#">forget password?</a>
+                  </button>
+                  <button class="btn btn--primary" type="submit">
+                    sign in
+                  </button>
+                  <span>OR</span>
+                  <button class="btn btn--group">
+                    <i class="icon fab fa-facebook-square"></i>Login with
+                    Facebook
+                  </button>
+                  <button class="btn btn--group">
+                    <i class="icon fab fa-google-plus-square"></i>Login with
+                    Google +
+                  </button>
+                  <label for="register"
+                    >New Member?
+                    <button id="register" name="register" class="btn btn--link">
+                      <a href="">register now</a>
+                    </button>
+                  </label>
+                </fieldset>
+              </form>
             </li>
             <li class="top-nav__menu-item">
               <a href="#">Log out</a>
@@ -80,7 +124,7 @@
             <a href="#">promos</a>
           </li>
         </ul>
-        <button class="btn">sell with us</button>
+        <button class="btn btn--primary">sell with us</button>
       </nav>
     </header>
 

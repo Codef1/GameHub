@@ -16,6 +16,16 @@ function toggleMenu() {
   }
 }
 
+function showLoginForm() {
+  var loginForm = document.getElementById("login-frm");
+
+  if (loginForm.style.display === "none") {
+    loginForm.style.display = "block";
+  } else {
+    loginForm.style.display = "none";
+  }
+}
+
 window.addEventListener("resize", function () {
   if (this.window.innerWidth >= 966) {
     menu.style.display = "flex";

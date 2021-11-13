@@ -14,7 +14,16 @@ a {
   color: #000;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 /* Navigation bar */
+.header {
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
 .top-nav {
   align-items: center;
   background-color: #f0f0f0;
@@ -81,6 +90,7 @@ a {
   font-size: 0.8rem;
   font-weight: lighter;
 }
+
 /* Hamburger menu */
 .hamburger-menu {
   cursor: pointer;
@@ -95,6 +105,17 @@ a {
   height: 3px;
   margin: 2px;
   width: 22px;
+}
+
+/* Input */
+.input {
+  border: 1px solid #000;
+  padding: 5px;
+  outline: none;
+}
+.input::placeholder {
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 /* Input group */
@@ -112,13 +133,84 @@ a {
 
 /* Buttons */
 .btn {
-  background-color: #000;
   border: none;
-  color: #fff;
   font-size: 0.8rem;
   font-weight: 500;
   padding: 15px;
+}
+.btn--primary {
+  color: #fff;
+  background-color: #000;
   text-transform: uppercase;
+}
+.btn--link {
+  font-size: 0.7rem;
+  background-color: transparent;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #000;
+  padding: 5px;
+}
+.btn--group {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.btn .icon {
+  font-size: 1.1rem;
+  padding-right: 5px;
+}
+
+/* Login form */
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.login-frm {
+  display: none;
+  top: 33px;
+  right: -36px;
+  background: #fff;
+  position: absolute;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.274);
+  padding: 20px 0;
+}
+.login-frm::before {
+  position: absolute;
+  left: 12%;
+  top: -8px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+.login-frm fieldset {
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-frm .btn:not(.btn--link) {
+  margin: 5px 0;
+  width: 100%;
+}
+.login-frm label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: start;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 965px) {
