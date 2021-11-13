@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
@@ -251,10 +255,10 @@ h2 {
 }
 
 /* Arrival section */
-.section-arrival {
+.section {
   padding: 10px 20%;
 }
-.section-arrival header {
+.section header {
   display: flex;
   align-items: flex-end;
   font-size: 1.2rem;
@@ -312,16 +316,6 @@ h2 {
 }
 
 /* Best seller section */
-.section-best-seller {
-  padding: 10px 20%;
-}
-
-.section-best-seller header {
-  display: flex;
-  align-items: flex-end;
-  font-size: 1.2rem;
-  padding: 25px 0;
-}
 
 /* Footer */
 .footer {
@@ -413,13 +407,8 @@ h2 {
   }
 
   /* Arrival section */
-  .section-arrival {
-    padding: 10px 50px;
-  }
-
-  /* Best seller section */
-  .section-best-seller {
-    padding: 10px 50px;
+  .section {
+    padding: 10px 20px;
   }
 }
 
