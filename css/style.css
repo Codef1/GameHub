@@ -21,8 +21,13 @@ button {
 
 /* Typography */
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
+  text-transform: capitalize;
+}
+h2 {
+  font-weight: 600;
 }
 
 /* Navigation bar */
@@ -228,13 +233,73 @@ legend {
   height: 425px;
   position: relative;
 }
-.section-hero header {
+.section-hero h2 {
   color: #f2e4ae;
-  font-size: 2rem;
+  font-size: 2.5rem;
   left: 30px;
   position: absolute;
-  text-transform: capitalize;
   top: 30px;
+}
+
+/* Arrival section */
+.section-arrival {
+  padding: 10px 20%;
+}
+.section-arrival header {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  padding: 25px 0;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner {
+  width: 40%;
+  min-width: 400px;
+}
+
+/* Product card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  min-width: 145px;
+}
+.card__img {
+  width: 100%;
+  padding: 10px;
+}
+.card__header {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.card__price {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price::after {
+  content: "Kr";
+}
+.original-price {
+  color: #9e9e9e;
+  text-decoration: line-through;
+}
+
+.badge {
+  border: 1px solid #000;
+  padding: 2px 5px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 965px) {
@@ -266,6 +331,11 @@ legend {
   .hamburger-menu {
     display: flex;
     flex-direction: column;
+  }
+
+  /* Arrival section */
+  .section-arrival {
+    padding: 10px 50px;
   }
 }
 
