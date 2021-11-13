@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Hub</title>
+    <meta
+      name="description"
+      content="Game Hub - find any game you want here with best price. we have weekly offers."
+    />
+    <title>Game Hub - Home</title>
     <!-- Reset default css with normalize.css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -24,5 +28,62 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <section class="top-nav">
+        <h1 class="logo">
+          <a href="#">Game Hub</a>
+        </h1>
+        <nav id="top-nav" class="top-nav__container">
+          <section role="searchbox" class="search-box input-group">
+            <input type="search" placeholder="Type in and hit Enter" />
+            <i class="fas fa-search"></i>
+          </section>
+          <ul class="top-nav__menu">
+            <li class="top-nav__menu-item">
+              <i class="fas fa-shopping-cart"></i>
+              <a href="#">Cart</a>
+            </li>
+            <li class="top-nav__menu-item">
+              <i class="far fa-user-circle"></i>
+              <a href="#">User</a>
+            </li>
+            <li class="top-nav__menu-item">
+              <a href="#">Log out</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-menu" onclick="toggleMenu()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </section>
+      <nav id="navbar" class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item">
+            <a href="#">all games</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#">nintendo</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#">playstation</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#">xbox</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#">pc games</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="#">promos</a>
+          </li>
+        </ul>
+        <button class="btn">sell with us</button>
+      </nav>
+    </header>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
