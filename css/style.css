@@ -120,3 +120,61 @@ a {
   padding: 15px;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 965px) {
+  /* Navigation bar */
+  .navbar {
+    display: none;
+    flex-direction: column;
+  }
+  .navbar__menu {
+    border-top: 1px solid #000;
+    flex-direction: column;
+    margin: 0;
+  }
+  .navbar__menu-item {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.1px solid #dcdcdc;
+  }
+  .navbar__menu-item:hover {
+    background-color: #f1f1f1;
+    border: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  /* Navigation bar */
+  .top-nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  .top-nav__menu {
+    margin-top: 15px;
+  }
+  .top-nav__container {
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid #000;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .search-box {
+    margin: 0;
+  }
+
+  .logo {
+    padding: 20px;
+  }
+
+  .hamburger-menu {
+    top: 25px;
+  }
+}
