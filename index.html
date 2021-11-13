@@ -32,13 +32,18 @@
     <header class="header">
       <section class="top-nav">
         <h1 class="logo">
-          <a href="#">Game Hub</a>
+          <a href="index.html">Game Hub</a>
         </h1>
         <nav id="top-nav" class="top-nav__container">
-          <section role="searchbox" class="search-box input-group">
-            <input type="search" placeholder="Type in and hit Enter" />
+          <label for="search-box" class="search-box input-group">
+            <input
+              id="search-box"
+              name="search-box"
+              type="search"
+              placeholder="Type in and hit Enter"
+            />
             <i class="icon fas fa-search"></i>
-          </section>
+          </label>
           <ul class="top-nav__menu">
             <li class="top-nav__menu-item">
               <i class="fas fa-shopping-cart"></i>
@@ -68,9 +73,7 @@
                     id="password"
                     required
                   />
-                  <button class="btn btn--link">
-                    <a href="#">forget password?</a>
-                  </button>
+                  <button class="btn btn--link">forget password?</button>
                   <button class="btn btn--primary" type="submit">
                     sign in
                   </button>
@@ -86,7 +89,7 @@
                   <label for="register"
                     >New Member?
                     <button id="register" name="register" class="btn btn--link">
-                      <a href="">register now</a>
+                      register now
                     </button>
                   </label>
                 </fieldset>
@@ -127,7 +130,14 @@
         <button class="btn btn--primary">sell with us</button>
       </nav>
     </header>
-
+    <section class="section-hero">
+      <header>
+        <h2 title="header">
+          crazy games<br />
+          we make your game better...
+        </h2>
+      </header>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
