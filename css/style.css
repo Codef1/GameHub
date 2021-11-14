@@ -48,6 +48,16 @@ abbr[title] {
   cursor: inherit;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
 /* Typography */
 h1,
 h2,
@@ -428,6 +438,91 @@ input::placeholder {
 /* About us */
 .section-about-us {
   margin: 10% 0;
+}
+
+/* Cart */
+.cart {
+  margin: 5% 0;
+}
+.cart__container {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__products {
+  width: 100%;
+  margin-right: 90px;
+}
+.cart__item {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 0;
+}
+.cart__item .card__img {
+  width: 100px;
+}
+.cart .price {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card__quantity .btn {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.card__quantity input {
+  width: 30px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.summery {
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.summery__item,
+.summery__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 0.8rem;
+}
+.summery__total {
+  font-weight: bold;
+}
+.summery__item {
+  display: flex;
+  border-bottom: 1px solid #e2e2e2;
+}
+.summery .price,
+.summery p {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-code .btn {
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+.promo-code h3 {
+  margin: 15px 0;
 }
 
 @media only screen and (max-width: 965px) {

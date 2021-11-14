@@ -38,3 +38,18 @@ window.addEventListener("resize", function () {
     topMenu.style.display = "none";
   }
 });
+
+function increment(id) {
+  var counter = document.getElementById(id);
+  var count = parseInt(counter.value, 10);
+  count = isNaN(count) ? 0 : count;
+  counter.value = ++count;
+}
+
+function decrement(id) {
+  var counter = document.getElementById(id);
+  var count = parseInt(counter.value, 10);
+  count = isNaN(count) ? 0 : count;
+
+  counter.value = count <= 0 ? 0 : --count;
+}
