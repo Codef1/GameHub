@@ -620,4 +620,13 @@ input::placeholder {
   .form-group input {
     width: 100%;
   }
+
+  /* Cart */
+  .cart__container {
+    flex-direction: column-reverse;
+  }
+  .cart__summery {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
 }
