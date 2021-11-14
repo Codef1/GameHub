@@ -81,20 +81,20 @@ h2 {
   justify-content: space-around;
   padding: 10px;
 }
-.top-nav__container {
+.top-nav_container {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-.top-nav__menu {
+.top-nav_menu {
   display: flex;
   position: relative;
 }
-.top-nav__menu-item {
+.top-nav_menu-item {
   font-size: 1rem;
   padding: 0 5px;
 }
-.top-nav__menu-item:not(:last-child)::after {
+.top-nav_menu-item:not(:last-child)::after {
   content: "|";
   padding-left: 5px;
 }
@@ -104,18 +104,18 @@ h2 {
   justify-content: space-around;
 }
 
-.navbar__menu {
+.navbar_menu {
   align-items: center;
   display: flex;
 }
-.navbar__menu-item {
+.navbar_menu-item {
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0 20px;
   padding-bottom: 5px;
   text-transform: uppercase;
 }
-.navbar__menu-item:hover {
+.navbar_menu-item:hover {
   border-bottom: 1px solid #000;
 }
 
@@ -327,15 +327,15 @@ input::placeholder {
   width: 160px;
   min-width: 145px;
 }
-.card__img {
+.card_img {
   width: 100%;
   padding: 10px;
 }
-.card__header {
+.card_header {
   font-size: 1rem;
   margin: 10px 0;
 }
-.card__price {
+.card_price {
   margin-top: 10px;
   font-size: 0.7rem;
   display: flex;
@@ -368,18 +368,18 @@ input::placeholder {
   padding: 50px 0;
   justify-content: center;
 }
-.footer__nav {
+.footer_nav {
   margin: 0 20px;
   font-size: 0.8rem;
 }
-.footer__menu {
+.footer_menu {
   padding-top: 20px;
 }
-.footer__menu-item {
+.footer_menu-item {
   text-transform: capitalize;
   padding: 7px 2px;
 }
-.footer__social-media {
+.footer_social-media {
   margin-right: 20px;
 }
 
@@ -444,22 +444,22 @@ input::placeholder {
 .cart {
   margin: 5% 0;
 }
-.cart__container {
+.cart_container {
   display: flex;
   justify-content: space-between;
 }
-.cart__products {
+.cart_products {
   width: 100%;
   margin-right: 90px;
 }
-.cart__item {
+.cart_item {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid #e2e2e2;
   padding: 10px 0;
 }
-.cart__item .card__img {
+.cart_item .card_img {
   width: 100px;
 }
 .cart .price {
@@ -467,21 +467,21 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
-.card__body {
+.card_body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.card__quantity {
+.card_quantity {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.card__quantity .btn {
+.card_quantity .btn {
   font-size: 1.2rem;
   padding: 5px 10px;
 }
-.card__quantity input {
+.card_quantity input {
   width: 30px;
   margin: 0 10px;
   text-align: center;
@@ -491,18 +491,18 @@ input::placeholder {
   text-transform: capitalize;
   margin-top: 20px;
 }
-.summery__item,
-.summery__total {
+.summery_item,
+.summery_total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   font-size: 0.8rem;
 }
-.summery__total {
+.summery_total {
   font-weight: bold;
 }
-.summery__item {
+.summery_item {
   display: flex;
   border-bottom: 1px solid #e2e2e2;
 }
@@ -535,18 +535,18 @@ input::placeholder {
     width: 100%;
     z-index: 14;
   }
-  .navbar__menu {
+  .navbar_menu {
     border-top: 1px solid #000;
     flex-direction: column;
     margin: 0;
   }
-  .navbar__menu-item {
+  .navbar_menu-item {
     border-bottom: 0.1px solid #dcdcdc;
     padding: 20px 0;
     text-align: center;
     width: 100%;
   }
-  .navbar__menu-item:hover {
+  .navbar_menu-item:hover {
     background-color: #f1f1f1;
     border: none;
   }
@@ -572,10 +572,10 @@ input::placeholder {
     flex-direction: column;
     padding: 0;
   }
-  .top-nav__menu {
+  .top-nav_menu {
     margin-top: 15px;
   }
-  .top-nav__container {
+  .top-nav_container {
     background-color: #f0f0f0;
     border-top: 1px solid #000;
     display: none;
@@ -603,7 +603,7 @@ input::placeholder {
   .footer {
     flex-direction: column;
   }
-  .footer__nav {
+  .footer_nav {
     width: 100%;
     margin-top: 20px;
     padding-top: 10px;
@@ -622,10 +622,10 @@ input::placeholder {
   }
 
   /* Cart */
-  .cart__container {
+  .cart_container {
     flex-direction: column-reverse;
   }
-  .cart__summery {
+  .cart_summery {
     border-bottom: 1px solid black;
     margin-bottom: 10px;
   }

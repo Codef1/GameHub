@@ -9,8 +9,6 @@
       content="Game Hub - find any game you want here with best price. we have weekly offers."
     />
     <title>Game Hub - Cart details</title>
-    <!-- Reset default css with normalize.css -->
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font-awesome cdn for icons -->
     <link
@@ -34,7 +32,7 @@
         <h1 class="logo">
           <a href="index.html">Game Hub</a>
         </h1>
-        <nav id="top-nav" class="top-nav__container">
+        <nav id="top-nav" class="top-nav_container">
           <div class="search-box input-group">
             <input
               id="search-box"
@@ -46,12 +44,12 @@
               <i class="icon fas fa-search" title="search button icon"></i>
             </button>
           </div>
-          <ul class="top-nav__menu">
-            <li class="top-nav__menu-item">
+          <ul class="top-nav_menu">
+            <li class="top-nav_menu-item">
               <i class="fas fa-shopping-cart" aria-hidden="true"></i>
               <a href="cart.html">Cart</a>
             </li>
-            <li class="top-nav__menu-item">
+            <li class="top-nav_menu-item">
               <i class="far fa-user-circle" aria-hidden="true"></i>
               <button onclick="showLoginForm()">User</button>
               <form id="login-frm" class="login-frm">
@@ -103,7 +101,7 @@
                 </fieldset>
               </form>
             </li>
-            <li class="top-nav__menu-item">
+            <li class="top-nav_menu-item">
               <a href="#">Log out</a>
             </li>
           </ul>
@@ -115,23 +113,23 @@
         </button>
       </section>
       <nav id="navbar" class="navbar">
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">
+        <ul class="navbar_menu">
+          <li class="navbar_menu-item">
             <a href="all-games.html">all games</a>
           </li>
-          <li class="navbar__menu-item">
+          <li class="navbar_menu-item">
             <a href="all-games.html#nintendo">nintendo</a>
           </li>
-          <li class="navbar__menu-item">
+          <li class="navbar_menu-item">
             <a href="all-games.html#playstation">playstation</a>
           </li>
-          <li class="navbar__menu-item">
+          <li class="navbar_menu-item">
             <a href="all-games.html#xbox">xbox</a>
           </li>
-          <li class="navbar__menu-item">
+          <li class="navbar_menu-item">
             <a href="all-games.html#pc-game">pc games</a>
           </li>
-          <li class="navbar__menu-item">
+          <li class="navbar_menu-item">
             <a href="all-games.html">promos</a>
           </li>
         </ul>
@@ -145,69 +143,69 @@
       </h2>
     </section>
     <section class="section cart">
-      <header class="cart__header">
+      <header class="cart_header">
         <h2>cart</h2>
       </header>
-      <div class="cart__container">
-        <div class="cart__products">
-          <article class="card cart__item">
+      <div class="cart_container">
+        <div class="cart_products">
+          <article class="card cart_item">
             <img
-              class="card__img"
+              class="card_img"
               src="img/xbox-one-cover-game.png"
               alt="Xbox one game"
             />
-            <div class="card__body">
-              <h3 class="card__header">product title</h3>
+            <div class="card_body">
+              <h3 class="card_header">product title</h3>
               <span class="price">32.00</span>
-              <div class="card__quantity">
+              <div class="card_quantity">
                 <button class="btn" onclick="decrement(1)">-</button>
                 <input type="number" name="counter" id="1" value="1" />
                 <button class="btn" onclick="increment(1)">+</button>
               </div>
             </div>
           </article>
-          <article class="card cart__item">
+          <article class="card cart_item">
             <img
-              class="card__img"
+              class="card_img"
               src="img/xbox-one-cover-game.png"
               alt="Xbox one game"
             />
-            <div class="card__body">
-              <h3 class="card__header">product title</h3>
+            <div class="card_body">
+              <h3 class="card_header">product title</h3>
               <span class="price">32.00</span>
-              <div class="card__quantity">
+              <div class="card_quantity">
                 <button class="btn" onclick="decrement(2)">-</button>
                 <input type="number" name="counter" id="2" value="2" />
                 <button class="btn" onclick="increment(2)">+</button>
               </div>
             </div>
           </article>
-          <article class="card cart__item">
+          <article class="card cart_item">
             <img
-              class="card__img"
+              class="card_img"
               src="img/xbox-one-cover-game.png"
               alt="Xbox one game"
             />
-            <div class="card__body">
-              <h3 class="card__header">product title</h3>
+            <div class="card_body">
+              <h3 class="card_header">product title</h3>
               <span class="price">32.00</span>
-              <div class="card__quantity">
+              <div class="card_quantity">
                 <button class="btn" onclick="decrement(3)">-</button>
                 <input type="number" name="counter" id="3" value="3" />
                 <button class="btn" onclick="increment(3)">+</button>
               </div>
             </div>
           </article>
-          <article class="card cart__item">
+          <article class="card cart_item">
             <img
-              class="card__img"
+              class="card_img"
               src="img/xbox-one-cover-game.png"
               alt="Xbox one game"
             />
-            <div class="card__body">
-              <h3 class="card__header">product title</h3>
+            <div class="card_body">
+              <h3 class="card_header">product title</h3>
               <span class="price">32.00</span>
-              <div class="card__quantity">
+              <div class="card_quantity">
                 <button class="btn" onclick="decrement(4)">-</button>
                 <input type="number" name="counter" id="4" value="1" />
                 <button class="btn" onclick="increment(4)">+</button>
@@ -215,7 +213,7 @@
             </div>
           </article>
         </div>
-        <aside class="cart__summery">
+        <aside class="cart_summery">
           <div class="promo-code">
             <h3>add promo code</h3>
             <label for="promo">
@@ -225,15 +223,15 @@
           </div>
           <div class="summery">
             <h3>summery</h3>
-            <div class="summery__item">
+            <div class="summery_item">
               <p>price(4 items)</p>
               <div class="price">128.21</div>
             </div>
-            <div class="summery__item">
+            <div class="summery_item">
               <p>delivery charge</p>
               <div class="price">48.21</div>
             </div>
-            <div class="summery__total">
+            <div class="summery_total">
               <p>total price</p>
               <div class="price">176.42</div>
             </div>
@@ -243,7 +241,7 @@
     </section>
     <footer>
       <section class="footer">
-        <div class="footer__social-media">
+        <div class="footer_social-media">
           <h2 class="logo">game hub</h2>
           <div class="social-media">
             <i class="icon fab fa-facebook-square" title="facebook icon"></i>
@@ -254,41 +252,41 @@
             ></i>
           </div>
         </div>
-        <nav class="footer__nav">
+        <nav class="footer_nav">
           <h2>main pages</h2>
-          <ul class="footer__menu">
-            <li class="footer__menu-item">
+          <ul class="footer_menu">
+            <li class="footer_menu-item">
               <a href="contact-us.html">sell with us</a>
             </li>
-            <li class="footer__menu-item">
+            <li class="footer_menu-item">
               <a href="about-us.html">about us</a>
             </li>
-            <li class="footer__menu-item">
+            <li class="footer_menu-item">
               <a href="contact-us.html">contact us</a>
             </li>
           </ul>
         </nav>
-        <nav class="footer__nav">
+        <nav class="footer_nav">
           <h2>policy</h2>
-          <ul class="footer__menu">
-            <li class="footer__menu-item">terms of usage</li>
-            <li class="footer__menu-item">privacy policy</li>
-            <li class="footer__menu-item">return policy</li>
+          <ul class="footer_menu">
+            <li class="footer_menu-item">terms of usage</li>
+            <li class="footer_menu-item">privacy policy</li>
+            <li class="footer_menu-item">return policy</li>
           </ul>
         </nav>
-        <nav class="footer__nav">
+        <nav class="footer_nav">
           <h2>categories</h2>
-          <ul class="footer__menu">
-            <li class="footer__menu-item">
+          <ul class="footer_menu">
+            <li class="footer_menu-item">
               <a href="all-games.html#nintendo">nintendo</a>
             </li>
-            <li class="footer__menu-item">
+            <li class="footer_menu-item">
               <a href="all-games.html#xbox">xbox</a>
             </li>
-            <li class="footer__menu-item">
+            <li class="footer_menu-item">
               <a href="all-games.html#playstation">playstation</a>
             </li>
-            <li class="footer__menu-item">
+            <li class="footer_menu-item">
               <a href="all-games.html#pc-game">pc game</a>
             </li>
           </ul>
