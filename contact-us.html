@@ -8,7 +8,7 @@
       name="description"
       content="Game Hub - find any game you want here with best price. we have weekly offers."
     />
-    <title>Game Hub - Home</title>
+    <title>Game Hub - Contact Us</title>
     <!-- Reset default css with normalize.css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -147,99 +147,60 @@
       </h2>
     </section>
     <section class="section">
-      <header>
-        <h2>new arrivals</h2>
-        <button class="btn btn--link">see all</button>
-      </header>
-      <main class="product-container">
-        <img class="banner" src="img/1.png" alt="Image of an tractor" />
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+      <form class="contact-us-frm">
+        <fieldset>
+          <legend>personal details</legend>
+          <div class="form-group">
+            <label for="fname"
+              >First Name <abbr title="required">*</abbr></label
+            >
+            <input type="text" id="fname" name="fname" />
           </div>
-        </article>
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+          <div class="form-group">
+            <label for="lname">Last Name <abbr title="required">*</abbr></label>
+            <input type="text" id="lname" name="lname" />
           </div>
-        </article>
-      </main>
-    </section>
-    <section class="section">
-      <header>
-        <h2>best seller</h2>
-        <button class="btn btn--link">see all</button>
-      </header>
-      <main class="product-container">
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+          <div class="form-group">
+            <label for="mobile"
+              >Mobile Number <abbr title="required">*</abbr></label
+            >
+            <input type="tel" id="mobile" name="mobile" />
           </div>
-        </article>
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+          <div class="form-group">
+            <label for="email"
+              >Email Address <abbr title="required">*</abbr></label
+            >
+            <input type="email" id="email" name="email" />
           </div>
-        </article>
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+        </fieldset>
+        <fieldset>
+          <legend>address</legend>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" />
           </div>
-        </article>
-        <article class="card">
-          <img
-            class="card__img"
-            src="img/xbox-one-cover-game.png"
-            alt="Xbox one game"
-          />
-          <h3 class="card__header">product title</h3>
-          <div class="card__price">
-            <span class="price original-price">32.00</span>
-            <span class="price off-price">25.50</span>
-            <span class="badge">30% Off</span>
+          <div class="form-group">
+            <label for="area">Area</label>
+            <input type="text" id="area" name="area" />
           </div>
-        </article>
-      </main>
+          <div class="form-group">
+            <label for="emirate">Emirate</label>
+            <input type="text" id="emirate" name="emirate" />
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <label class="label-light" for="personal-detail"
+            >Personal Details</label
+          >
+          <textarea
+            name="personal-detail"
+            id="personal-detail"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">send</button>
+      </form>
     </section>
     <footer>
       <section class="footer">

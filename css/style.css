@@ -26,18 +26,26 @@ ul {
 }
 
 fieldset {
+  width: 100%;
   border: 0;
   padding: 0;
   margin: 0;
 }
 
 legend {
+  text-transform: capitalize;
   font-weight: bold;
 }
 
 button {
   border: none;
   cursor: pointer;
+}
+
+abbr[title] {
+  text-decoration: none;
+  border-bottom: none;
+  cursor: inherit;
 }
 
 /* Typography */
@@ -135,14 +143,34 @@ h2 {
 }
 
 /* Input */
-.input {
+input {
   border: 1px solid #000;
   padding: 5px;
   outline: none;
 }
-.input::placeholder {
+input::placeholder {
   font-size: 0.8rem;
   font-weight: lighter;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  flex: 0 50%;
+  width: 90%;
+}
+.form-group label {
+  padding: 5px 0;
+}
+.form-group input {
+  margin: 2px 0;
+  width: 80%;
+}
+
+.label-light {
+  color: gray;
 }
 
 /* Input group */
@@ -190,6 +218,9 @@ h2 {
 .btn .icon {
   font-size: 1.1rem;
   padding-right: 5px;
+}
+.btn a {
+  color: #fff;
 }
 
 /* Login form */
@@ -348,7 +379,11 @@ h2 {
   margin-left: 20px;
 }
 .social-media .icon {
-  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.icon {
+  cursor: pointer;
 }
 
 .subscribe-frm {
@@ -373,6 +408,20 @@ h2 {
 
 .payment {
   font-size: 2rem;
+}
+
+/* Contact Us */
+.contact-us-frm {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20% 0;
+}
+.contact-us-frm fieldset {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 965px) {
@@ -461,5 +510,13 @@ h2 {
 
   .subscribe-frm {
     margin-top: 20px;
+  }
+
+  /* Contact us */
+  .contact-us-frm fieldset {
+    flex-direction: column;
+  }
+  .form-group input {
+    width: 100%;
   }
 }
