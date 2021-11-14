@@ -288,6 +288,7 @@ input::placeholder {
 /* Arrival section */
 .section {
   padding: 10px 20%;
+  font-size: 1rem;
 }
 .section header {
   display: flex;
@@ -422,6 +423,11 @@ input::placeholder {
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+/* About us */
+.section-about-us {
+  margin: 10% 0;
 }
 
 @media only screen and (max-width: 965px) {
