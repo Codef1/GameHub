@@ -17,6 +17,14 @@ window.onload = function () {
 
   cartBadge.innerText = cart_counter;
 
+  carts.map((cart) => {
+    var link = document.getElementById(`checkout-${cart[1]}`);
+    var btn = document.getElementById(`addBtn${cart[1]}`);
+    if (link === null) return;
+    link.style.display = "inline-block";
+    btn.style.display = "none";
+  });
+
   if (carts.length > 0 && cartContainer) {
     updateCartList();
   }
@@ -41,7 +49,7 @@ function updateCartList() {
               </div>
             </article>`;
   });
-  cartContainer.innerHTML = cartList;
+  cartContainer.innerHTML = cartList.join(" ");
 }
 
 function toggleMenu() {
@@ -109,6 +117,11 @@ function decrement(id) {
 }
 
 function addToCart(img, id) {
+  var checkout = document.getElementById(`checkout-${id}`);
+  var addBtn = document.getElementById(`addBtn${id}`);
+  addBtn.style.display = "none";
+  checkout.style.display = "block";
+
   cart_counter++;
   cartBadge.innerText = cart_counter;
   window.sessionStorage.setItem("cartCounter", JSON.stringify(cart_counter));
