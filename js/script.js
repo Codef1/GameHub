@@ -10,7 +10,10 @@ window.onload = function () {
     JSON.parse(sessionStorage.getItem("carts")) === null
       ? new Array()
       : JSON.parse(sessionStorage.getItem("carts"));
-  cart_counter = JSON.parse(sessionStorage.getItem("cartCounter"));
+  cart_counter =
+    JSON.parse(sessionStorage.getItem("cartCounter")) === null
+      ? 0
+      : JSON.parse(sessionStorage.getItem("cartCounter"));
 
   cartBadge.innerText = cart_counter;
 
