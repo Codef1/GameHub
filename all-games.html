@@ -18,6 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
+      integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +52,15 @@
           </div>
           <ul class="top-nav_menu">
             <li class="top-nav_menu-item">
-              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-shopping-cart"></i>
+                <span
+                  class="fa-layers-counter fa-2x"
+                  style="top: -5px; right: -5px"
+                  id="cart-badge"
+                  >0</span
+                >
+              </span>
               <a href="cart.html">Cart</a>
             </li>
             <li class="top-nav_menu-item">
@@ -160,6 +174,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/play-last.jpg" alt="Xbox one game" />
@@ -169,6 +186,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img
@@ -182,6 +202,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-tom.jpg" alt="Xbox one game" />
@@ -191,6 +214,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
       </div>
     </section>
@@ -208,6 +234,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-tom.jpg" alt="Xbox one game" />
@@ -217,6 +246,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-battle.jpg" alt="Xbox one game" />
@@ -226,6 +258,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-planet.jpg" alt="Xbox one game" />
@@ -235,6 +270,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
       </div>
     </section>
@@ -256,6 +294,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/play-far.jpg" alt="Xbox one game" />
@@ -265,6 +306,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/play-last.jpg" alt="Xbox one game" />
@@ -274,6 +318,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/play-spider.jpg" alt="Xbox one game" />
@@ -283,6 +330,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
       </div>
     </section>
@@ -300,6 +350,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img
@@ -313,6 +366,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-planet.jpg" alt="Xbox one game" />
@@ -322,6 +378,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
         <article class="card">
           <img class="card_img" src="img/xbox-gta.jpg" alt="Xbox one game" />
@@ -331,6 +390,9 @@
             <span class="price off-price">25.50</span>
             <span class="badge">30% Off</span>
           </div>
+          <button class="btn btn--primary btn--card" onclick="addToCart()">
+            add to cart
+          </button>
         </article>
       </div>
     </section>
@@ -364,9 +426,15 @@
         <nav class="footer_nav">
           <h2>policy</h2>
           <ul class="footer_menu">
-            <li class="footer_menu-item">terms of usage</li>
-            <li class="footer_menu-item">privacy policy</li>
-            <li class="footer_menu-item">return policy</li>
+            <li class="footer_menu-item">
+              <a href="terms.html">terms of usage</a>
+            </li>
+            <li class="footer_menu-item">
+              <a href="policy.html">privacy policy</a>
+            </li>
+            <li class="footer_menu-item">
+              <a href="return-policy.html">return policy</a>
+            </li>
           </ul>
         </nav>
         <nav class="footer_nav">
