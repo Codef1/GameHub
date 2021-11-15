@@ -1,5 +1,45 @@
 var menu = document.getElementById("navbar");
 var topMenu = document.getElementById("top-nav");
+var cartBadge = document.getElementById("cart-badge");
+var carts = [];
+var cart_counter = 0;
+var cartContainer = document.getElementById("cart-container");
+
+window.onload = function () {
+  carts =
+    JSON.parse(sessionStorage.getItem("carts")) === null
+      ? new Array()
+      : JSON.parse(sessionStorage.getItem("carts"));
+  cart_counter = JSON.parse(sessionStorage.getItem("cartCounter"));
+
+  cartBadge.innerText = cart_counter;
+
+  if (carts.length > 0 && cartContainer) {
+    updateCartList();
+  }
+};
+
+function updateCartList() {
+  var cartList = carts.map((cart) => {
+    return `<article class="card cart_item">
+              <img
+                class="card_img"
+                src="img/${cart[0]}"
+                alt="Xbox one game"
+              />
+              <div class="card_body">
+                <h3 class="card_header">product title</h3>
+                <span class="price">32.00</span>
+                <div class="card_quantity">
+                  <button class="btn" onclick="decrement(${cart[1]})">-</button>
+                  <input type="number" name="counter" id="${cart[1]}" value="1" />
+                  <button class="btn" onclick="increment(${cart[1]})">+</button>
+                </div>
+              </div>
+            </article>`;
+  });
+  cartContainer.innerHTML = cartList;
+}
 
 function toggleMenu() {
   if (menu.style.display === "flex") {
@@ -52,4 +92,26 @@ function decrement(id) {
   count = isNaN(count) ? 0 : count;
 
   counter.value = count <= 0 ? 0 : --count;
+
+  if (count === 0) {
+    cart_counter--;
+    cartBadge.innerText = cart_counter;
+    window.sessionStorage.setItem("cartCounter", JSON.stringify(cart_counter));
+    carts = carts.filter((cart) => {
+      return cart[1] !== id;
+    });
+    window.sessionStorage.setItem("carts", JSON.stringify(carts));
+    updateCartList();
+  }
+}
+
+function addToCart(img, id) {
+  cart_counter++;
+  cartBadge.innerText = cart_counter;
+  window.sessionStorage.setItem("cartCounter", JSON.stringify(cart_counter));
+
+  carts.push([img, id]);
+  window.sessionStorage.setItem("carts", JSON.stringify(carts));
+
+  console.log(carts);
 }
