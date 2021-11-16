@@ -128,6 +128,4 @@ function addToCart(img, id) {
 
   carts.push([img, id]);
   window.sessionStorage.setItem("carts", JSON.stringify(carts));
-
-  console.log(carts);
 }

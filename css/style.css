@@ -72,10 +72,6 @@ h2 {
 }
 
 /* Navigation bar */
-.header {
-  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
 .top-nav {
   align-items: center;
   background-color: #f0f0f0;
@@ -195,11 +191,11 @@ input::placeholder {
 .input-group input {
   border: none;
   flex: auto;
-  outline: none;
 }
 
 /* Buttons */
 .btn {
+  text-align: center;
   border: none;
   font-size: 0.8rem;
   font-weight: 500;
@@ -249,14 +245,11 @@ input::placeholder {
   font-size: 1.1rem;
   padding-right: 5px;
 }
-.btn a {
-  color: #fff;
-}
 
 /* Login form */
 .login-frm {
   background: #fff;
-  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.274);
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.2);
   display: none;
   padding: 20px 10px;
   position: absolute;
@@ -483,8 +476,7 @@ input::placeholder {
   width: 100px;
 }
 .cart .price {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .card_body {
@@ -625,8 +617,7 @@ input::placeholder {
   }
   .footer_nav {
     width: 100%;
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-top: 30px;
   }
 
   .subscribe-frm {
